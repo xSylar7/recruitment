@@ -1,16 +1,3 @@
-# Treehouse Prerequisites:
-
-Finish the following chapters/steps from [this course](https://teamtreehouse.com/library/introducing-lists) on treehouse:
-
-- Chapter "**Meet Lists**": All steps
-- Chapter "**Using Lists**": All steps
-
-Finish the following chapters/steps from [this course](https://teamtreehouse.com/library/introducing-dictionaries) on treehouse:
-
-- Chapter "**Introducing Dictionaries**": All steps
-
----
-
 # Fork & Clone
 
 Fork and clone [this repository](https://github.com/JoinCODED/recruitment) in your `python` directory.
