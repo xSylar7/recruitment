@@ -1,3 +1,8 @@
+def get_skills():
+    # Add at least 3 random skills for the user to select from
+    return []
+
+
 def show_skills(skills):
     # Pretty print skills to the user
     # Write your code here

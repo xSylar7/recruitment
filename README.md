@@ -33,6 +33,7 @@ In this example, the user entered their name, age, years of experience, and chos
 
 ## Steps:
 
+1. In the `get_skills` function, add at least 3 random skills to the list
 1. In the `show_skills` function, print all the skills to the user, so that we can call this function before prompting the user to select from them.
     - The printed skills should be number from 1 ... n, where `n` is the length of the list (look into `enumerate`).
 2. In the `get_user_skills`, show the `skills` (received from the parameter) to the user. Prompt them to select 2 `skills` and return the two `skills` they selected in a list.
@@ -47,8 +48,8 @@ In this example, the user entered their name, age, years of experience, and chos
 4. In `check_acceptance`, return `True` if their `age` is between `25` and `40`, they have more than `3` years of `experience`, and the `desired_skill` is within their `skills`.
 5. In the `main` function:
     1. `print` a welcome message to this recruitment program.
-    2. Create a list called `skills` and fill it with any skills of your choice, make sure to have at least 6 choices. These are the skills that the user will choose from, and the skills you will pass to the other functions you have worked on.
-    3. Check the applicant's acceptance using `check_acceptance`, and pass in the 6th `skill` from your list of `skills`, created in Step 2, as the "`desired_skill`".
+    2. Get the list of `skills` using the `get_skills` function you created, and assign it to a variable called `skills`.
+    3. Check the applicant's acceptance using `check_acceptance`, and pass in the 3rd `skill` from your list of `skills`, created in Step 2, as the "`desired_skill`".
     4. If the applicant has been accepted, print a message to the user saying they're accepted (make sure the word "accepted" appears in that message.) Otherwise, print another message saying to the user they weren't accepted (make sure the word "rejected" appears in this message.)
 
 Hint: To check if an element exists in a list, go [here](https://www.w3schools.com/python/python_lists.asp) and scroll down to "_Check if Item Exists_".
