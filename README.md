@@ -34,19 +34,19 @@ In this example, the user entered their name, age, years of experience, and chos
 ## Steps:
 
 1. In the `get_skills` function, add at least 3 random skills to the list
-1. In the `show_skills` function, print all the skills to the user, so that we can call this function before prompting the user to select from them.
+2. In the `show_skills` function, print all the skills to the user, so that we can call this function before prompting the user to select from them.
     - The printed skills should be number from 1 ... n, where `n` is the length of the list (look into `enumerate`).
-2. In the `get_user_skills`, show the `skills` (received from the parameter) to the user. Prompt them to select 2 `skills` and return the two `skills` they selected in a list.
+3. In the `get_user_skills`, show the `skills` (received from the parameter) to the user. Prompt them to select 2 `skills` and return the two `skills` they selected in a list.
     - For example, if the user enters `1`, the skill "Python" should be added to the list `skills`.
-3. In `get_user_cv`:
+4. In `get_user_cv`:
     1. Create an empty dictionary called `cv`. This dictionary will then hold all of the applicant's information.
     2. Ask the user for their name. Save the name in the `cv` dictionary with key `name`.
     3. Ask the user for their age. Save the age in the `cv` dictionary with key `age`.
     4. Ask the user for their years of experience. Save the years of experience in the `cv` dictionary with key `experience`.
     5. Add a key called `skills`, and assign the output of `get_user_skills`.
     6. Return the `cv` you have built thus far.
-4. In `check_acceptance`, return `True` if their `age` is between `25` and `40`, they have more than `3` years of `experience`, and the `desired_skill` is within their `skills`.
-5. In the `main` function:
+5. In `check_acceptance`, return `True` if their `age` is between `25` and `40`, they have more than `3` years of `experience`, and the `desired_skill` is within their `skills`.
+6. In the `main` function:
     1. `print` a welcome message to this recruitment program.
     2. Get the list of `skills` using the `get_skills` function you created, and assign it to a variable called `skills`.
     3. Check the applicant's acceptance using `check_acceptance`, and pass in the 3rd `skill` from your list of `skills`, created in Step 2, as the "`desired_skill`".
