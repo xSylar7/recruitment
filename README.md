@@ -37,8 +37,6 @@ In this example, the user entered their name, age, years of experience, and chos
 2. In the `show_skills` function, print all the skills to the user, so that we can call this function before prompting the user to select from them.
     - The printed skills should be listed in a shape of an ordered list from 1 ... `n`, where n is the length of the list (look into `enumerate`).
 3. In the `get_user_skills`, show the `skills` (received from the parameter) to the user. Prompt the user to select 2 `skills` and return the two `skills` the user selected in a list.
-     <!-- isn't the example below is not that much clear? the student may get confused because of the skills name, is it the same skills that we show to the user? or the user himself's skills?-->
-    - For example, if the user enters `1`, the skill "Python" should be added to the list `skills`.
 4. In `get_user_cv`:
     1. Create an empty dictionary called `cv`. This dictionary will then hold all of the applicant's information.
     2. Ask the users for their name. Save the name in the `cv` dictionary with key `name`.
@@ -50,8 +48,8 @@ In this example, the user entered their name, age, years of experience, and chos
 6. In the `main` function:
     1. `print` a welcome message to this recruitment program.
     2. Get the list of `skills` using the `get_skills` function you created, and assign it to a variable called `skills`.
-    <!-- 3.  isn't there a missing step? to call the get_user_cv function, pass skills to it, and assign the function to a variable called cv-->
-    3. Check the applicant's acceptance using `check_acceptance`, and pass in two arguments: the cv and the 3rd `skill` from your list of `skills`, created in Step 2, as the "`desired_skill`".
-    4. If the applicant has been accepted, print a message to the user saying they're accepted (make sure the word "accepted" appears in that message.) Otherwise, print another message saying to the user they weren't accepted (make sure the word "rejected" appears in this message.)
+    3. Call the `get_user_cv` function, pass `skills` to it, and assign the result to a variable called `cv`.
+    4. Check the applicant's acceptance using `check_acceptance`, and pass in two arguments: the cv and the 3rd `skill` from your list of `skills`, created in Step 2, as the "`desired_skill`".
+    5. If the applicant has been accepted, print a message to the user saying they're accepted (make sure the word "accepted" appears in that message.) Otherwise, print another message saying to the user they weren't accepted (make sure the word "rejected" appears in this message.)
 
 Hint: To check if an element exists in a list, go [here](https://www.w3schools.com/python/python_lists.asp) and scroll down to "_Check if Item Exists_".
