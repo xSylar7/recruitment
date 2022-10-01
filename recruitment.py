@@ -37,18 +37,18 @@ def get_user_skills(skills):
     #     if user_skill1 == num :
     #         print (f"") 
       
-print (get_user_skills(get_skills()))
+# print (get_user_skills(get_skills()))
 
 
 # This function will get the user's cv from their inputs
 # HINT: Use previous built functions to get the skills from the user
-def get_user_cv():
+def get_user_cv(skills):
     cv = {}
 
-    cv["name"] = input ("Enter your name"),
-    cv["age"] = int(input("Enter your age")),
-    cv["years_experience"] = int(input("Enter your years of Experience"))
-    cv["skills"] = get_user_skills(get_skills())
+    cv["name"] = input ("What is your name?")
+    cv["age"] = int(input("How old are you?"))
+    cv["years_experience"] = int(input("How many years of experience do you have?"))
+    cv["skills"] = get_user_skills(skills)
     return cv
 
 # print (get_user_cv())
@@ -62,7 +62,7 @@ def get_user_cv():
 # This functions checks if the cv is acceptable or not, by checking the age, experience and skills and return a boolean (True or False) based on that
 def check_acceptance(cv, desired_skill):
 
-    if 25 <= cv["age"] <= 40 and cv ["years_experience"] > 3 and desired_skill in cv ["skills"]:
+    if (25 <= cv["age"] <= 40 and (cv ["years_experience"] > 3) and (desired_skill in cv ["skills"])):
         return True
     else:
         return False
@@ -72,8 +72,15 @@ def check_acceptance(cv, desired_skill):
 def main():
     # Write your main logic here by combining the functions above into the
     # desired outcome
-    pass
-
+    print ("Welcome to the special recruitment program, please answer the following questions:")
+    skills = get_skills()
+    user_cv = get_user_cv(skills)
+    is_accepted = check_acceptance(user_cv,skills)
+    if is_accepted: 
+        print (f"Congrats {user_cv['name']} , you have been accepted!")
+    else:
+        print ("Try again some othertime")
+    
 
 if __name__ == "__main__":
     main()
