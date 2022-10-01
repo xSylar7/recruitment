@@ -43,15 +43,12 @@ print (get_user_skills(get_skills()))
 # This function will get the user's cv from their inputs
 # HINT: Use previous built functions to get the skills from the user
 def get_user_cv():
-    cv = {
-        "name": "name",
-        "age": "age",
-        "years_experience": "years_experience" 
-        }
+    cv = {}
 
     cv["name"] = input ("Enter your name"),
     cv["age"] = int(input("Enter your age")),
     cv["years_experience"] = int(input("Enter your years of Experience"))
+    cv["skills"] = get_user_skills(get_skills())
     return cv
 
 # print (get_user_cv())
@@ -64,7 +61,12 @@ def get_user_cv():
 
 # This functions checks if the cv is acceptable or not, by checking the age, experience and skills and return a boolean (True or False) based on that
 def check_acceptance(cv, desired_skill):
-    pass
+
+    if 25 <= cv["age"] <= 40 and cv ["years_experience"] > 3 and desired_skill in cv ["skills"]:
+        return True
+    else:
+        return False
+
 
 
 def main():
